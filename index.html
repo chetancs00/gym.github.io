@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan's Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS Reset  */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/barbell-1839086_1920.jpg');
+        height: 3000px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 51%;
+        margin: 29px auto;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 11px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: gray;
+
+    }
+
+    .left div {
+        line-height: 11px;
+        font-size: 24px;
+        text-align: center;
+
+    }
+
+    .left img {
+        padding: 0px 26px;
+        width: 98px;
+        filter: invert(100%);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(41, 30, 30);
+        border-radius: 20px;
+        border: 2px dashed #333;
+        text-shadow: 0 0 5px #277dff;
+        transition-duration: 0.25s;
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 110px 58px;
+        padding: 36px 42px;
+        width: 53%;
+        border-radius: 20px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        margin: 11px auto;
+        width: 345px;
+        padding: 3px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 18px;
+        font-family: 'Baloo Bhai 2';
+    }
+
+    .container h1 {
+        text-align: center;
+
+    }
+
+    .container button {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Img/500_F_243266606_qrREg3SESvf13xf7i7gBpG2aNsqFC1it.jpg" alt="">
+            <div>Chetan Fitness</div>
+        </div>
+
+        <!-- mid box for nav bar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Dibrugarh now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+
+    </div>
+</body>
+
+</html>
